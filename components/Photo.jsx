@@ -25,12 +25,12 @@ const Photo = () => {
           className="w-[298px] h-[278px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/assets/photo.png"
+            src="/assets/assets/roundedlightenedprofile.png"
             priority
             quality={100}
             fill
             alt="profile-img"
-            className="object-contain"
+            className="object-contain w-90"
           />
         </motion.div>
         {/* Circle */}
