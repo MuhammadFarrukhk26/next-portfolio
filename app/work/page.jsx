@@ -19,35 +19,46 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "WordPress website",
+    title: "Digilysist",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fuga incidunt dicta. Sed aspernatur quod possimus nulla? Odio dolorum nobis dicta repellendus magni corrupti, similique quibusdam possimus, quo enim vitae?",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
-    image: "/assets/assets/work/thumb1.png",
-    live: "",
+      "A WordPress website built for a digital marketing brand to present services clearly, improve online visibility, and support lead generation.",
+    stack: [{ name: "WordPress" }, { name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
+    image: "/assets/assets/work/1.png",
+    live: "http://digilysist.com/",
     github: "",
   },
   {
     num: "02",
-    category: "frontend",
-    title: "project 2",
+    category: "Brand showcase",
+    title: "Rangccessories",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fuga incidunt dicta. Sed aspernatur quod possimus nulla? Odio dolorum nobis dicta repellendus magni corrupti, similique quibusdam possimus, quo enim vitae?",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
-    image: "/assets/assets/work/thumb2.png",
-    live: "",
+      "A creative brand website developed to promote artistry and collections in collaboration with a digital marketing agency, with a strong visual-first presentation.",
+    stack: [{ name: "WordPress" }, { name: "UI Design" }, { name: "SEO" }, { name: "Content Layout" }],
+    image: "/assets/assets/work/r1.png",
+    live: "https://rangccessories.com/",
     github: "",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 3",
+    category: "Business website",
+    title: "Seacotrans Trade Co",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fuga incidunt dicta. Sed aspernatur quod possimus nulla? Odio dolorum nobis dicta repellendus magni corrupti, similique quibusdam possimus, quo enim vitae?",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
-    image: "/assets/assets/work/thumb3.png",
-    live: "",
+      "A corporate website for an import/export and tax consultancy business, designed to communicate trust, services, and company credibility to clients.",
+    stack: [{ name: "WordPress" }, { name: "Business Branding" }, { name: "CSS 3" }, { name: "Responsive Design" }],
+    image: "/assets/assets/work/s1.png",
+    live: "https://seacotrans.net/",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "E-commerce store",
+    title: "Lafian Enterprises",
+    description:
+      "An e-commerce website built for a home and personal care brand, focused on selling products online with a clear catalog and customer-friendly storefront experience.",
+    stack: [{ name: "WordPress" }, { name: "E-commerce" }, { name: "Product UX" }, { name: "CMS Management" }],
+    image: "/assets/assets/work/l1.png",
+    live: "https://www.lafian.pk/",
     github: "",
   },
 ];
@@ -55,10 +66,7 @@ const projects = [
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
   const handleSlideChange = (swiper) => {
-    debugger;
-    // get current slider index
     const currentIndex = swiper.activeIndex;
-    // update project state based on current slide index
     setProject(projects[currentIndex]);
   };
   return (
@@ -78,49 +86,53 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project?.category} project
+              <p className="text-sm uppercase tracking-[0.25em] text-accent">
+                {project?.category}
+              </p>
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                {project?.title}
               </h2>
               <p className="text-white/60">{project?.description}</p>
-              <ul>
+              <ul className="flex flex-wrap items-center gap-2">
                 {project?.stack?.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
-                      {item?.name} {index !== project.stack?.length - 1 && ","}
+                      {item?.name}
+                      {index !== project.stack?.length - 1 && " •"}
                     </li>
                   );
                 })}
               </ul>
               <div className="border border-white/20"></div>
-              {/* buttons */}
               <div className="flex items-center gap-4">
-                {/* Live Project button */}
-                <Link href={project?.live}>
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover: text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live Project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-                {/* Github Project Button */}
-                <Link href={project?.github}>
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover: text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github Project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project?.live && (
+                  <Link href={project.live} target="_blank" rel="noreferrer">
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live Project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+                {project?.github && (
+                  <Link href={project.github} target="_blank" rel="noreferrer">
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github Project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -142,8 +154,8 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
+                          alt={project.title}
                           className="object-cover"
-                          alert
                         />
                       </div>
                     </div>
