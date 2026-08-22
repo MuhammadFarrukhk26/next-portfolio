@@ -25,7 +25,7 @@ const projects = [
       "A WordPress website built for a digital marketing brand to present services clearly, improve online visibility, and support lead generation.",
     stack: [{ name: "WordPress" }, { name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
     image: "/assets/assets/work/1.png",
-    live: "http://digilysist.com/",
+    live: "http://digilysistsolutions.com/",
     github: "",
   },
   {
