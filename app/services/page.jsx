@@ -6,30 +6,30 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Web Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsam voluptatibus corrupti iure dicta officiis eveniet quae aut dolore sed velit voluptatem, sit eaque fugiat. Error pariatur nihil qui distinctio?",
+      "I design polished, user-focused websites tailored to client goals, helping businesses present their brand clearly and professionally across all devices.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "WordPress Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsam voluptatibus corrupti iure dicta officiis eveniet quae aut dolore sed velit voluptatem, sit eaque fugiat. Error pariatur nihil qui distinctio?",
+      "I build and customize WordPress websites using the right themes, plugins, and layouts to create scalable, easy-to-manage business sites and online stores.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsam voluptatibus corrupti iure dicta officiis eveniet quae aut dolore sed velit voluptatem, sit eaque fugiat. Error pariatur nihil qui distinctio?",
+      "I create fast, responsive, and smooth-performing websites using modern front-end development practices, with attention to usability, speed, and functionality.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "CMS & Hosting Support",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsam voluptatibus corrupti iure dicta officiis eveniet quae aut dolore sed velit voluptatem, sit eaque fugiat. Error pariatur nihil qui distinctio?",
+      "I provide consultation and support for CMS setup, hosting guidance, and ongoing website management so clients can keep their digital presence running smoothly.",
     href: "",
   },
 ];
