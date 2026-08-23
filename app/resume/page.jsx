@@ -15,7 +15,7 @@ import { TbSql } from "react-icons/tb";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti corporis numquam eius assumenda! ",
+    "I am a Computer Science graduate with 3+ years of experience building responsive websites, WordPress-based business platforms, and modern front-end experiences. I enjoy creating clean, functional, and visually engaging digital solutions that help businesses grow online.",
   info: [
     { fieldName: "Name", fieldValue: "Muhammad Farrukh Khan" },
     { fieldName: "Phone", fieldValue: "(+92) 337-8019687" },
@@ -32,23 +32,22 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti corporis numquam eius assumenda! ",
+    "My work experience includes front-end development, WordPress website creation, responsive UI implementation, and digital project support for business and marketing clients.",
   items: [
     {
       company: "HM Developers",
       position: "Front-end Intern",
-      duration: "Jan-2022 - July-2022",
+      duration: "Jan 2022 - Jul 2022",
     },
     {
       company: "Sybrid PVT LTD",
       position: "Junior Software Engineer",
-      duration: "Jan-2023 - Present",
+      duration: "Jan 2023 - Present",
     },
-
     {
       company: "Digilysist LLC",
-      position: "Web Developr",
-      duration: "Oct-2020 - Jan-2023",
+      position: "Web Developer",
+      duration: "Oct 2020 - Jan 2023",
     },
   ],
 };
@@ -57,37 +56,37 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti corporis numquam eius assumenda! ",
+    "My academic background in Computer Science, combined with web development certifications and continuous learning, has strengthened my technical and problem-solving foundation.",
   items: [
     {
       institution: "Ilma University",
-      position: "Bachelors in Computer Science",
-      duration: "Jan-2018 - July-2023",
+      position: "Bachelor's in Computer Science",
+      duration: "Jan 2018 - Jul 2023",
     },
     {
       institution: "Coursera.org",
-      position: "HTML, CSS, and Javascript for Web Developers",
-      duration: "Mar-2021 - Apr-2021",
+      position: "HTML, CSS, and JavaScript for Web Developers",
+      duration: "Mar 2021 - Apr 2021",
     },
     {
       institution: "Coursera.org",
       position: "Front-End Web Development with React",
-      duration: "Aug-2023 - Sept-2023",
+      duration: "Aug 2023 - Sep 2023",
     },
     {
       institution: "Coursera.org",
       position: "SQL for Data Science",
-      duration: "Aug-2020 - Sept-2020",
+      duration: "Aug 2020 - Sep 2020",
     },
     {
       institution: "Govt. Degree Boys College, Gulzar-e-Hijri",
       position: "Intermediate Pre-Engineering",
-      duration: "Jan-2015 - July-2017",
+      duration: "Jan 2015 - Jul 2017",
     },
     {
       institution: "The Set School",
       position: "Matriculation Computer Science",
-      duration: "Jan-2013 - November-2015",
+      duration: "Jan 2013 - Nov 2015",
     },
   ],
 };
@@ -95,32 +94,36 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti corporis numquam eius assumenda! ",
+    "I work with both design and development tools to build modern, responsive, and business-ready websites with a strong focus on usability and performance.",
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: "html 5",
+      name: "HTML 5",
     },
     {
       icon: <FaCss3 />,
-      name: "css 3",
+      name: "CSS 3",
     },
     {
       icon: <FaJs />,
-      name: "javascript",
+      name: "JavaScript",
     },
     {
       icon: <FaReact />,
-      name: "react.js",
+      name: "React.js",
     },
-    { icon: <SiNextdotjs />, name: "next.js" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
     {
       icon: <FaNodeJs />,
-      name: "node.js",
+      name: "Node.js",
     },
     {
       icon: <TbSql />,
       name: "SQL",
+    },
+    {
+      icon: <FaFigma />,
+      name: "Figma",
     },
   ],
 };
